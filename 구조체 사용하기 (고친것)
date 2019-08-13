@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+struct Dashboard {
+	int speed;
+	char fuel;
+	float mileage;
+	int engineTemp;
+	int rpm;
+
+};
+
+int main()
+{
+	struct Dashboard a1;
+	a1.speed = 80;
+	a1.fuel = 'F';
+	a1.mileage = 5821.442871f;
+	a1.engineTemp = 200;
+	a1.rpm = 1830;
+
+
+	printf("speed : %d\n", a1.speed);
+	printf("fuel : %c\n ", a1.fuel);
+	printf("mileage : %f\n", a1.mileage);
+	printf("engineTemp : %d\n", a1.engineTemp);
+	printf("rpm : %d\n", a1.rpm);
+
+	return 0;
+
+}
